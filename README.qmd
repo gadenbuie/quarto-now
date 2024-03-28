@@ -33,14 +33,14 @@ Document last rendered: {{< now >}}.
 
 > Document last rendered: {{< now >}}.
 
-<details><summary>What does "last rendered" mean?</summary>
+::: {.callout-tip collapse="true" title="What does \"last rendered\" mean?"}
 "Last rendered" means the date and time when you called `quarto render` or when the document was rendered by `quarto preview`.
 
 Because `now` is a shortcode, its value is re-calculated every time the document renders, even if you've frozen the document with `freeze: true`.
 Frozen documents don't re-run computed code chunks, but their shortcodes are still re-evaluated.
 
 So `{{{< now >}}}` is best for things like copyright notices in footers -- try `{{{< now year >}}}` for that one -- or other places where you know that `quarto render` is synonymous with "last updated".
-</details>
+:::
 
 Alternatively, you can use the `{{{< modified >}}}` shortcode to include the last modified date and/or time of the document.
 This shortcode uses the `modified` metadata field to determine the last modified date and time of the document.
