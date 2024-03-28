@@ -20,6 +20,8 @@ The **now** extension provides two shortcodes: `now` and `modified`.
 Both take an optional additional argument specifying the desired format
 of the date and/or time.
 
+### Last rendered time
+
 Use the `{{< now >}}` shortcode anywhere you want to include the current
 date and/or time in your document.
 
@@ -27,7 +29,7 @@ date and/or time in your document.
 Document last rendered: {{< now >}}.
 ```
 
-> Document last rendered: 2024-03-28 16:27:53.
+> Document last rendered: 2024-03-28 16:29:57.
 
 > [!TIP]
 >
@@ -44,6 +46,8 @@ Document last rendered: {{< now >}}.
 > So `{{< now >}}` is best for things like copyright notices in footers
 > – try `{{< now year >}}` for that one – or other places where you know
 > that `quarto render` is synonymous with “last updated”.
+
+### Last modified time
 
 Alternatively, you can use the `{{< modified >}}` shortcode to include
 the last modified date and/or time of the document. This shortcode uses
@@ -69,21 +73,21 @@ use one of the predefined format aliases in the table below.
 
 | Shortcode                 | Result                   | Format String |
 |:--------------------------|:-------------------------|:-------------:|
-| `{{< now >}}`             | 2024-03-28 16:27:53      |   `"%F %T"`   |
+| `{{< now >}}`             | 2024-03-28 16:29:57      |   `"%F %T"`   |
 | `{{< now year >}}`        | 2024                     |    `"%Y"`     |
 | `{{< now month >}}`       | March                    |    `"%B"`     |
 | `{{< now day >}}`         | 28                       |    `"%d"`     |
 | `{{< now weekday >}}`     | Thursday                 |    `"%A"`     |
 | `{{< now hour >}}`        | 04                       |    `"%I"`     |
-| `{{< now minute >}}`      | 27                       |    `"%M"`     |
+| `{{< now minute >}}`      | 29                       |    `"%M"`     |
 | `{{< now ampm >}}`        | PM                       |    `"%p"`     |
 | `{{< now date >}}`        | 03/28/24                 |    `"%x"`     |
-| `{{< now time >}}`        | 16:27:53                 |    `"%X"`     |
-| `{{< now datetime >}}`    | Thu Mar 28 16:27:53 2024 |    `"%c"`     |
+| `{{< now time >}}`        | 16:29:57                 |    `"%X"`     |
+| `{{< now datetime >}}`    | Thu Mar 28 16:29:57 2024 |    `"%c"`     |
 | `{{< now isodate >}}`     | 2024-03-28               |    `"%F"`     |
-| `{{< now isotime >}}`     | 16:27:53                 |    `"%T"`     |
-| `{{< now isodatetime >}}` | 2024-03-28T16:27:53-0400 |  `"%FT%T%z"`  |
-| `{{< now timestamp >}}`   | 2024-03-28 16:27:53      |   `"%F %T"`   |
+| `{{< now isotime >}}`     | 16:29:57                 |    `"%T"`     |
+| `{{< now isodatetime >}}` | 2024-03-28T16:29:57-0400 |  `"%FT%T%z"`  |
+| `{{< now timestamp >}}`   | 2024-03-28 16:29:57      |   `"%F %T"`   |
 
 Alternatively, you can specify the specific format using the format
 strings known to [the Lua `os.date()`

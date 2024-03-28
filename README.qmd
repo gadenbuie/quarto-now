@@ -25,6 +25,8 @@ If you're using version control, you will want to check in this directory.
 The **now** extension provides two shortcodes: `now` and `modified`.
 Both take an optional additional argument specifying the desired format of the date and/or time.
 
+### Last rendered time
+
 Use the `{{{< now >}}}` shortcode anywhere you want to include the current date and/or time in your document.
 
 ```{.markdown shortcodes="false"}
@@ -41,6 +43,8 @@ Frozen documents don't re-run computed code chunks, but their shortcodes are sti
 
 So `{{{< now >}}}` is best for things like copyright notices in footers -- try `{{{< now year >}}}` for that one -- or other places where you know that `quarto render` is synonymous with "last updated".
 :::
+
+### Last modified time
 
 Alternatively, you can use the `{{{< modified >}}}` shortcode to include the last modified date and/or time of the document.
 This shortcode uses the `modified` metadata field to determine the last modified date and time of the document.
