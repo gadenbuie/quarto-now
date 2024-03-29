@@ -2,14 +2,20 @@
 title: "now"
 subtitle: "A Quarto extension for inserting the current or last modified date and time"
 
-format: gfm
+format:
+  gfm: default
+  html:
+    css: auto-dark-mode.css
+
 format-links: false
 
 # Comment out the line below to test automatic file-modified detection
 modified: "2006-05-04 12:34:56"
 ---
 
+::: {.content-visible when-format="markdown"}
 A Quarto extension for inserting the current or last modified date and time in the format of your choosing.
+:::
 
 ## Installing
 
