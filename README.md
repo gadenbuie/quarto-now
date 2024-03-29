@@ -29,7 +29,7 @@ date and/or time in your document.
 Document last rendered: {{< now >}}.
 ```
 
-> Document last rendered: 2024-03-28 22:04:41.
+> Document last rendered: 2024-03-29 09:22:32.
 
 > [!TIP]
 >
@@ -63,7 +63,7 @@ modified: "2006-05-04 12:34:56"
 Document last modified: {{< modified >}}.
 ```
 
-> Document last modified: 2006-05-04 12:34:56.
+> Document last modified: 2024-03-29 09:22:31.
 
 > [!CAUTION]
 >
@@ -97,21 +97,21 @@ You can use one of the predefined format aliases in the table below.
 
 | Shortcode                 | Result                   | Format String |
 |:--------------------------|:-------------------------|:-------------:|
-| `{{< now >}}`             | 2024-03-28 22:04:41      |   `"%F %T"`   |
+| `{{< now >}}`             | 2024-03-29 09:22:32      |   `"%F %T"`   |
 | `{{< now year >}}`        | 2024                     |    `"%Y"`     |
 | `{{< now month >}}`       | March                    |    `"%B"`     |
-| `{{< now day >}}`         | 28                       |    `"%d"`     |
-| `{{< now weekday >}}`     | Thursday                 |    `"%A"`     |
-| `{{< now hour >}}`        | 10                       |    `"%I"`     |
-| `{{< now minute >}}`      | 04                       |    `"%M"`     |
-| `{{< now ampm >}}`        | PM                       |    `"%p"`     |
-| `{{< now date >}}`        | 03/28/24                 |    `"%x"`     |
-| `{{< now time >}}`        | 22:04:41                 |    `"%X"`     |
-| `{{< now datetime >}}`    | Thu Mar 28 22:04:41 2024 |    `"%c"`     |
-| `{{< now isodate >}}`     | 2024-03-28               |    `"%F"`     |
-| `{{< now isotime >}}`     | 22:04:41                 |    `"%T"`     |
-| `{{< now isodatetime >}}` | 2024-03-28T22:04:41-0400 |  `"%FT%T%z"`  |
-| `{{< now timestamp >}}`   | 2024-03-28 22:04:41      |   `"%F %T"`   |
+| `{{< now day >}}`         | 29                       |    `"%d"`     |
+| `{{< now weekday >}}`     | Friday                   |    `"%A"`     |
+| `{{< now hour >}}`        | 09                       |    `"%I"`     |
+| `{{< now minute >}}`      | 22                       |    `"%M"`     |
+| `{{< now ampm >}}`        | AM                       |    `"%p"`     |
+| `{{< now date >}}`        | 03/29/24                 |    `"%x"`     |
+| `{{< now time >}}`        | 09:22:32                 |    `"%X"`     |
+| `{{< now datetime >}}`    | Fri Mar 29 09:22:32 2024 |    `"%c"`     |
+| `{{< now isodate >}}`     | 2024-03-29               |    `"%F"`     |
+| `{{< now isotime >}}`     | 09:22:32                 |    `"%T"`     |
+| `{{< now isodatetime >}}` | 2024-03-29T09:22:32-0400 |  `"%FT%T%z"`  |
+| `{{< now timestamp >}}`   | 2024-03-29 09:22:32      |   `"%F %T"`   |
 
 ### Format Strings
 
@@ -148,4 +148,4 @@ format string in quotes.
 Modified {{< modified "on %A, %B %d of %Y" >}}.
 ```
 
-> Modified on Thursday, May 04 of 2006.
+> Modified on Friday, March 29 of 2024.
