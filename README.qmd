@@ -77,46 +77,46 @@ If you're on Windows, or if your system doesn't support `stat`, you can add `mod
 Both `{{{< now >}}}` and `{{{< modified >}}}` shortcodes accept an optional argument specifying the desired format of the date and/or time.
 You can use one of the predefined format aliases in the table below.
 
-| Shortcode | Result | Format String |
-|:----------|:-------|:--------------:|
-| `{{{< now >}}}` | {{< now >}} | `"%F %T"` |
-| `{{{< now year >}}}` | {{< now year >}} | `"%Y"` |
-| `{{{< now month >}}}` | {{< now month >}} | `"%B"` |
-| `{{{< now day >}}}` | {{< now day >}} | `"%d"` |
-| `{{{< now weekday >}}}` | {{< now weekday >}} | `"%A"` |
-| `{{{< now hour >}}}` | {{< now hour >}} | `"%I"` |
-| `{{{< now minute >}}}` | {{< now minute >}} | `"%M"` |
-| `{{{< now ampm >}}}` | {{< now ampm >}} | `"%p"` |
-| `{{{< now date >}}}` | {{< now date >}} | `"%x"` |
-| `{{{< now time >}}}` | {{< now time >}} | `"%X"` |
-| `{{{< now datetime >}}}` | {{< now datetime >}} | `"%c"` |
-| `{{{< now isodate >}}}` | {{< now isodate >}} | `"%F"` |
-| `{{{< now isotime >}}}` | {{< now isotime >}} | `"%T"` |
-| `{{{< now isodatetime >}}}` | {{< now isodatetime >}} | `"%FT%T%z"` |
-| `{{{< now timestamp >}}}` | {{< now timestamp >}} | `"%F %T"` |
+| Shortcode                   | Result                  | Format String |
+|:----------------------------|:------------------------|:-------------:|
+| `{{{< now >}}}`             | {{< now >}}             |   `"%F %T"`   |
+| `{{{< now year >}}}`        | {{< now year >}}        |    `"%Y"`     |
+| `{{{< now month >}}}`       | {{< now month >}}       |    `"%B"`     |
+| `{{{< now day >}}}`         | {{< now day >}}         |    `"%d"`     |
+| `{{{< now weekday >}}}`     | {{< now weekday >}}     |    `"%A"`     |
+| `{{{< now hour >}}}`        | {{< now hour >}}        |    `"%I"`     |
+| `{{{< now minute >}}}`      | {{< now minute >}}      |    `"%M"`     |
+| `{{{< now ampm >}}}`        | {{< now ampm >}}        |    `"%p"`     |
+| `{{{< now date >}}}`        | {{< now date >}}        |    `"%x"`     |
+| `{{{< now time >}}}`        | {{< now time >}}        |    `"%X"`     |
+| `{{{< now datetime >}}}`    | {{< now datetime >}}    |    `"%c"`     |
+| `{{{< now isodate >}}}`     | {{< now isodate >}}     |    `"%F"`     |
+| `{{{< now isotime >}}}`     | {{< now isotime >}}     |    `"%T"`     |
+| `{{{< now isodatetime >}}}` | {{< now isodatetime >}} |  `"%FT%T%z"`  |
+| `{{{< now timestamp >}}}`   | {{< now timestamp >}}   |   `"%F %T"`   |
 
 Alternatively, you can specify the specific format using the format strings known to [the Lua `os.date()` function](https://www.lua.org/pil/22.1.html).
 
-| Value | Description |
-|:------|:------------|
-|  `%a` | abbreviated weekday name (e.g., `Wed`)  |
-|  `%A` | full weekday name (e.g., `Wednesday`)  |
-|  `%b` | abbreviated month name (e.g., `Sep`)  |
-|  `%B` | full month name (e.g., `September`)  |
-|  `%c` | date and time (e.g., `09/16/98 23:48:10`)  |
-|  `%d` | day of the month (`16`) \[01-31\]  |
-|  `%H` | hour, using a 24-hour clock (`23`) \[00-23\]  |
-|  `%I` | hour, using a 12-hour clock (`11`) \[01-12\]  |
-|  `%M` | minute (`48`) \[00-59\]  |
-|  `%m` | month (`09`) \[01-12\]  |
-|  `%p` | either `"am"` or `"pm"` (`pm`)  |
-|  `%S` | second (`10`) \[00-61\]  |
-|  `%w` | weekday (`3`) \[0-6 = Sunday-Saturday\]  |
-|  `%x` | date (e.g., `09/16/98`)  |
-|  `%X` | time (e.g., `23:48:10`)  |
-|  `%Y` | full year (`1998`)  |
-|  `%y` | two-digit year (`98`) \[00-99\]  |
-|  `%%` | the character `%` |
+| Value | Description                                  |
+|:------|:---------------------------------------------|
+| `%a`  | abbreviated weekday name (e.g., `Wed`)       |
+| `%A`  | full weekday name (e.g., `Wednesday`)        |
+| `%b`  | abbreviated month name (e.g., `Sep`)         |
+| `%B`  | full month name (e.g., `September`)          |
+| `%c`  | date and time (e.g., `09/16/98 23:48:10`)    |
+| `%d`  | day of the month (`16`) \[01-31\]            |
+| `%H`  | hour, using a 24-hour clock (`23`) \[00-23\] |
+| `%I`  | hour, using a 12-hour clock (`11`) \[01-12\] |
+| `%M`  | minute (`48`) \[00-59\]                      |
+| `%m`  | month (`09`) \[01-12\]                       |
+| `%p`  | either `"am"` or `"pm"` (`pm`)               |
+| `%S`  | second (`10`) \[00-61\]                      |
+| `%w`  | weekday (`3`) \[0-6 = Sunday-Saturday\]      |
+| `%x`  | date (e.g., `09/16/98`)                      |
+| `%X`  | time (e.g., `23:48:10`)                      |
+| `%Y`  | full year (`1998`)                           |
+| `%y`  | two-digit year (`98`) \[00-99\]              |
+| `%%`  | the character `%`                            |
 
 When using a custom format string, you can include any additional text you want.
 If your format string includes a space, be sure to wrap the format string in quotes.

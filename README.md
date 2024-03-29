@@ -29,7 +29,7 @@ date and/or time in your document.
 Document last rendered: {{< now >}}.
 ```
 
-> Document last rendered: 2024-03-28 21:42:52.
+> Document last rendered: 2024-03-28 21:45:35.
 
 > [!TIP]
 >
@@ -85,21 +85,21 @@ use one of the predefined format aliases in the table below.
 
 | Shortcode                 | Result                   | Format String |
 |:--------------------------|:-------------------------|:-------------:|
-| `{{< now >}}`             | 2024-03-28 21:42:52      |   `"%F %T"`   |
+| `{{< now >}}`             | 2024-03-28 21:45:35      |   `"%F %T"`   |
 | `{{< now year >}}`        | 2024                     |    `"%Y"`     |
 | `{{< now month >}}`       | March                    |    `"%B"`     |
 | `{{< now day >}}`         | 28                       |    `"%d"`     |
 | `{{< now weekday >}}`     | Thursday                 |    `"%A"`     |
 | `{{< now hour >}}`        | 09                       |    `"%I"`     |
-| `{{< now minute >}}`      | 42                       |    `"%M"`     |
+| `{{< now minute >}}`      | 45                       |    `"%M"`     |
 | `{{< now ampm >}}`        | PM                       |    `"%p"`     |
 | `{{< now date >}}`        | 03/28/24                 |    `"%x"`     |
-| `{{< now time >}}`        | 21:42:52                 |    `"%X"`     |
-| `{{< now datetime >}}`    | Thu Mar 28 21:42:52 2024 |    `"%c"`     |
+| `{{< now time >}}`        | 21:45:35                 |    `"%X"`     |
+| `{{< now datetime >}}`    | Thu Mar 28 21:45:35 2024 |    `"%c"`     |
 | `{{< now isodate >}}`     | 2024-03-28               |    `"%F"`     |
-| `{{< now isotime >}}`     | 21:42:52                 |    `"%T"`     |
-| `{{< now isodatetime >}}` | 2024-03-28T21:42:52-0400 |  `"%FT%T%z"`  |
-| `{{< now timestamp >}}`   | 2024-03-28 21:42:52      |   `"%F %T"`   |
+| `{{< now isotime >}}`     | 21:45:35                 |    `"%T"`     |
+| `{{< now isodatetime >}}` | 2024-03-28T21:45:35-0400 |  `"%FT%T%z"`  |
+| `{{< now timestamp >}}`   | 2024-03-28 21:45:35      |   `"%F %T"`   |
 
 Alternatively, you can specify the specific format using the format
 strings known to [the Lua `os.date()`
