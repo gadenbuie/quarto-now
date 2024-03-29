@@ -1,0 +1,12 @@
+---
+format: gfm
+modified: "2006-05-04"
+shortcodes:
+  - ../_extensions/now/now.lua
+---
+
+The next two lines should match in the rendered output.
+
+Document last modified: {{< modified >}}. \
+Document last modified: 2006-05-04 00:00:00.
+

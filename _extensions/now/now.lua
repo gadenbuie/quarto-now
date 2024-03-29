@@ -101,16 +101,16 @@ local function parse_modified_date(meta)
   local dt = pandoc.utils.stringify(meta.modified)
 
   -- Parsing the date string
-  local year, month, day = dt:match("(%d{4})-(%d{2})-(%d{2})")
+  local year, month, day = dt:match("(%d%d%d%d)-(%d%d)-(%d%d)")
   if not (year and month and day) then
     quarto.log.error("Invalid `modified` date format. Please use the format 'YYYY-MM-DD HH:MM:SS'")
     return nil
   end
 
   -- parse the time in pieces so we can handle missing parts
-  local hour = dt:match("%d{4}-%d{2}-%d{2}[ T]?(%d+)")
-  local min  = dt:match("%d{4}-%d{2}-%d{2}[ T]?%d+:(%d+)")
-  local sec  = dt:match("%d{4}-%d{2}-%d{2}[ T]?%d+:%d+:(%d+)")
+  local hour = dt:match("%d%d%d%d-%d%d-%d%d[ T]?(%d+)")
+  local min  = dt:match("%d%d%d%d-%d%d-%d%d[ T]?%d+:(%d+)")
+  local sec  = dt:match("%d%d%d%d-%d%d-%d%d[ T]?%d+:%d+:(%d+)")
 
   -- Convert to a time object
   return os.time{
