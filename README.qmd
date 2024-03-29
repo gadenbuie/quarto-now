@@ -6,6 +6,17 @@ format:
   gfm: default
   html:
     css: auto-dark-mode.css
+    toc: true
+    toc-level: 2
+    toc-location: right
+    toc-title: "now"
+    code-links:
+      - text: gadenbuie/quarto-now
+        href: "https://github.com/gadenbuie/quarto-now"
+        icon: github
+      - text: Question or Issue?
+        href: "https://github.com/gadenbuie/quarto-now/issues/new"
+        icon: question-circle-fill
 
 format-links: false
 
@@ -81,9 +92,12 @@ modified: "2006-05-04 12:30"
 ```
 :::
 
-## Format Aliases
+## Formatting
 
 Both `{{{< now >}}}` and `{{{< modified >}}}` shortcodes accept an optional argument specifying the desired format of the date and/or time.
+
+### Aliases
+
 You can use one of the predefined format aliases in the table below.
 
 | Shortcode                   | Result                  | Format String |
@@ -103,6 +117,8 @@ You can use one of the predefined format aliases in the table below.
 | `{{{< now isotime >}}}`     | {{< now isotime >}}     |    `"%T"`     |
 | `{{{< now isodatetime >}}}` | {{< now isodatetime >}} |  `"%FT%T%z"`  |
 | `{{{< now timestamp >}}}`   | {{< now timestamp >}}   |   `"%F %T"`   |
+
+### Format Strings
 
 Alternatively, you can specify the specific format using the format strings known to [the Lua `os.date()` function](https://www.lua.org/pil/22.1.html).
 

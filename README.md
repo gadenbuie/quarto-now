@@ -29,7 +29,7 @@ date and/or time in your document.
 Document last rendered: {{< now >}}.
 ```
 
-> Document last rendered: 2024-03-28 21:49:48.
+> Document last rendered: 2024-03-28 22:04:41.
 
 > [!TIP]
 >
@@ -86,29 +86,34 @@ Document last modified: {{< modified >}}.
 > ---
 > ```
 
-## Format Aliases
+## Formatting
 
 Both `{{< now >}}` and `{{< modified >}}` shortcodes accept an optional
-argument specifying the desired format of the date and/or time. You can
-use one of the predefined format aliases in the table below.
+argument specifying the desired format of the date and/or time.
+
+### Aliases
+
+You can use one of the predefined format aliases in the table below.
 
 | Shortcode                 | Result                   | Format String |
 |:--------------------------|:-------------------------|:-------------:|
-| `{{< now >}}`             | 2024-03-28 21:49:48      |   `"%F %T"`   |
+| `{{< now >}}`             | 2024-03-28 22:04:41      |   `"%F %T"`   |
 | `{{< now year >}}`        | 2024                     |    `"%Y"`     |
 | `{{< now month >}}`       | March                    |    `"%B"`     |
 | `{{< now day >}}`         | 28                       |    `"%d"`     |
 | `{{< now weekday >}}`     | Thursday                 |    `"%A"`     |
-| `{{< now hour >}}`        | 09                       |    `"%I"`     |
-| `{{< now minute >}}`      | 49                       |    `"%M"`     |
+| `{{< now hour >}}`        | 10                       |    `"%I"`     |
+| `{{< now minute >}}`      | 04                       |    `"%M"`     |
 | `{{< now ampm >}}`        | PM                       |    `"%p"`     |
 | `{{< now date >}}`        | 03/28/24                 |    `"%x"`     |
-| `{{< now time >}}`        | 21:49:48                 |    `"%X"`     |
-| `{{< now datetime >}}`    | Thu Mar 28 21:49:48 2024 |    `"%c"`     |
+| `{{< now time >}}`        | 22:04:41                 |    `"%X"`     |
+| `{{< now datetime >}}`    | Thu Mar 28 22:04:41 2024 |    `"%c"`     |
 | `{{< now isodate >}}`     | 2024-03-28               |    `"%F"`     |
-| `{{< now isotime >}}`     | 21:49:48                 |    `"%T"`     |
-| `{{< now isodatetime >}}` | 2024-03-28T21:49:48-0400 |  `"%FT%T%z"`  |
-| `{{< now timestamp >}}`   | 2024-03-28 21:49:48      |   `"%F %T"`   |
+| `{{< now isotime >}}`     | 22:04:41                 |    `"%T"`     |
+| `{{< now isodatetime >}}` | 2024-03-28T22:04:41-0400 |  `"%FT%T%z"`  |
+| `{{< now timestamp >}}`   | 2024-03-28 22:04:41      |   `"%F %T"`   |
+
+### Format Strings
 
 Alternatively, you can specify the specific format using the format
 strings known to [the Lua `os.date()`
