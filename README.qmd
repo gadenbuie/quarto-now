@@ -66,10 +66,19 @@ Document last modified: {{< modified >}}.
 
 > Document last modified: {{< modified >}}.
 
-::: {.callout-caution collapse="true" title="Automatic file-modified detection"}
+::: {.callout-caution collapse="false" title="Automatic file-modified detection"}
 Automatic file-modified detection is only available on macOS and Linux, since it relies the `stat` command to determine the last modified time of the input document.
 
-If you're on Windows, or if your system doesn't support `stat`, you can add `modified: "YYYY-MM-DD HH:MM:SS"` to the document metadata to specify the last modified date and time.
+If you're on Windows, or if your system doesn't support `stat`, you can add `modified` to the document metadata to specify the last modified date and time.
+Use `YYYY-MM-DD` format with optional time `HH:MM:SS` in 24-hour format.
+
+```markdown
+---
+modified: 2006-05-04
+# -- or --
+modified: "2006-05-04 12:30"
+---
+```
 :::
 
 ## Format Aliases
