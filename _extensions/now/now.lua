@@ -57,7 +57,7 @@ local function last_modified_bsd(file)
 end
 
 local function last_modified_linux(file)
-  local command = "stat -c %Y " .. file  -- Command to get modification time
+  local command = "stat -c %y " .. file  -- Command to get modification time
 
   local result = run_command(command)
   if result == nil then
