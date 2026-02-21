@@ -1,0 +1,30 @@
+{
+  "Now Timestamp": {
+    "prefix": "now",
+    "body": [
+      "{{< now >}}"
+    ],
+    "description": "Insert the current date and time."
+  },
+  "Now with Format": {
+    "prefix": "now-format",
+    "body": [
+      "{{< now ${1|year,month,day,weekday,hour,minute,ampm,date,time,datetime,isodate,isotime,isodatetime,timestamp|} >}}"
+    ],
+    "description": "Insert the current date or time with a named format."
+  },
+  "Modified Timestamp": {
+    "prefix": "modified",
+    "body": [
+      "{{< modified >}}"
+    ],
+    "description": "Insert the source file's last-modified date and time."
+  },
+  "Modified with Format": {
+    "prefix": "modified-format",
+    "body": [
+      "{{< modified ${1|year,month,day,weekday,date,time,isodate,isotime,isodatetime,timestamp|} >}}"
+    ],
+    "description": "Insert the source file's last-modified date or time with a named format."
+  }
+}
