@@ -1,0 +1,45 @@
+$schema: https://m.canouil.dev/quarto-wizard/assets/schema/v1/extension-schema.json
+
+shortcodes:
+  now:
+    description: "Insert the current date or time at render time."
+    arguments:
+      - name: format
+        type: string
+        description: "Named format or a Lua strftime pattern. Named formats: year, month, day, weekday, hour, minute, ampm, date, time, datetime, isodate, isotime, isodatetime, timestamp."
+        enum:
+          - year
+          - month
+          - day
+          - weekday
+          - hour
+          - minute
+          - ampm
+          - date
+          - time
+          - datetime
+          - isodate
+          - isotime
+          - isodatetime
+          - timestamp
+  modified:
+    description: "Insert the source file's last-modified date or the 'modified' metadata value."
+    arguments:
+      - name: format
+        type: string
+        description: "Named format or a Lua strftime pattern. Named formats: year, month, day, weekday, hour, minute, ampm, date, time, datetime, isodate, isotime, isodatetime, timestamp."
+        enum:
+          - year
+          - month
+          - day
+          - weekday
+          - hour
+          - minute
+          - ampm
+          - date
+          - time
+          - datetime
+          - isodate
+          - isotime
+          - isodatetime
+          - timestamp
